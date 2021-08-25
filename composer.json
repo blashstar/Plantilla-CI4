@@ -1,0 +1,51 @@
+{
+	"name": "interactive/plantilla-ci4",
+	"type": "project",
+	"description": "Plantilla CodeIgniter4",
+	"homepage": "https://interactive.pe",
+	"license": "MIT",
+	"require": {
+		"php": "^7.3||^8.0",
+		"codeigniter4/framework": "^4",
+		"grocerycrud/enterprise": "2.*.*",
+		"letsdrink/ouzo-goodies": "^1.8",
+		"nette/utils": "^3.2",
+		"webmozart/path-util": "^2.3"
+	},
+	"require-dev": {
+		"fakerphp/faker": "^1.9",
+		"mikey179/vfsstream": "^1.6",
+		"phpunit/phpunit": "^9.1"
+	},
+	"suggest": {
+		"ext-fileinfo": "Improves mime type detection for files"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app",
+			"Config\\": "app/Config"
+		},
+		"exclude-from-classmap": [
+			"**/Database/Migrations/**"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+	"scripts": {
+		"test": "phpunit"
+	},
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"source": "https://github.com/codeigniter4/CodeIgniter4",
+		"slack": "https://codeigniterchat.slack.com"
+	},
+	"repositories": [
+		{
+			"type": "artifact",
+			"url": "artifacts/"
+		}
+	]
+}
